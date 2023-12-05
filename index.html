@@ -12,10 +12,12 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            position: relative; /* Add this to the body for positioning */
         }
 
         h1, h2 {
             color: #fff;
+            margin-top: 10px; /* Adjust the margin-top as needed */
         }
 
         button {
@@ -68,12 +70,20 @@
             height: 600px;
             border: 0;
         }
+
+        /* Adjustments for logo */
+        #logo {
+            max-width: 100px; /* Adjust the max-width as needed */
+            position: absolute;
+            top: 10px; /* Adjust the top position as needed */
+            left: 10px; /* Adjust the left position as needed */
+        }
     </style>
 </head>
 <body>
 
     <!-- Logo -->
-    <img src="LOGO.png" alt="Logo" id="logo" style="max-width: 100%;">
+    <img src="LOGO1.png" alt="Logo" id="logo">
 
     <!-- Main Page -->
     <h1>New Life Children H.S. School, Guna</h1>
@@ -107,40 +117,7 @@
     </div>
 
     <script>
-        function showAdmissionPage() {
-            document.getElementById('admissionPage').style.display = 'block';
-            document.getElementById('addFeesPage').style.display = 'none';
-            document.getElementById('viewAllPage').style.display = 'none';
-        }
-
-        function showAddFeesPage() {
-            document.getElementById('admissionPage').style.display = 'none';
-            document.getElementById('addFeesPage').style.display = 'block';
-            document.getElementById('viewAllPage').style.display = 'none';
-        }
-
-        function showViewAllPage() {
-            document.getElementById('admissionPage').style.display = 'none';
-            document.getElementById('addFeesPage').style.display = 'none';
-            document.getElementById('viewAllPage').style.display = 'block';
-        }
-
-        function openGoogleImages() {
-            window.open('https://photos.app.goo.gl/8hJ74rU2DkLmRUUA8', '_blank');
-        }
-
-        // Placeholder functions for handling logic
-        function selectClass(classNumber) {
-            alert(`Selected class: ${classNumber}`);
-        }
-
-        function depositFees(classNumber) {
-            alert(`Deposit fees for: ${classNumber}`);
-        }
-
-        function viewAllClassData(classNumber) {
-            alert(`View all data for: ${classNumber}`);
-        }
+        // ... existing JavaScript functions ...
     </script>
 
 </body>
