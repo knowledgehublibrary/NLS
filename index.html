@@ -96,7 +96,21 @@
     <div id="admissionPage" style="display: none;">
         <h2>New Admission</h2>
         <div class="button-row">
-            <!-- ... existing buttons ... -->
+           <button onclick="selectClass('Nursery')">Nursery</button>
+            <button onclick="selectClass('LKG')">LKG</button>
+            <button onclick="selectClass('UKG')">UKG</button>
+            <button onclick="selectClass(1)">Class 1</button>
+            <button onclick="selectClass(2)">Class 2</button>
+            <button onclick="selectClass(3)">Class 3</button>
+            <button onclick="selectClass(4)">Class 4</button>
+            <button onclick="selectClass(5)">Class 5</button>
+            <button onclick="selectClass(6)">Class 6</button>
+            <button onclick="selectClass(7)">Class 7</button>
+            <button onclick="selectClass(8)">Class 8</button>
+            <button onclick="selectClass(9)">Class 9</button>
+            <button onclick="selectClass(10)">Class 10</button>
+            <button onclick="selectClass(11)">Class 11</button>
+            <button onclick="selectClass(12)">Class 12</button>
         </div>
     </div>
 
@@ -104,7 +118,21 @@
     <div id="addFeesPage" style="display: none;">
         <h2>Fees Deposit</h2>
         <div class="button-row">
-            <!-- ... existing buttons ... -->
+            <button onclick="selectClass('Nursery')">Nursery</button>
+            <button onclick="selectClass('LKG')">LKG</button>
+            <button onclick="selectClass('UKG')">UKG</button>
+            <button onclick="selectClass(1)">Class 1</button>
+            <button onclick="selectClass(2)">Class 2</button>
+            <button onclick="selectClass(3)">Class 3</button>
+            <button onclick="selectClass(4)">Class 4</button>
+            <button onclick="selectClass(5)">Class 5</button>
+            <button onclick="selectClass(6)">Class 6</button>
+            <button onclick="selectClass(7)">Class 7</button>
+            <button onclick="selectClass(8)">Class 8</button>
+            <button onclick="selectClass(9)">Class 9</button>
+            <button onclick="selectClass(10)">Class 10</button>
+            <button onclick="selectClass(11)">Class 11</button>
+            <button onclick="selectClass(12)">Class 12</button>
         </div>
     </div>
 
@@ -112,12 +140,61 @@
     <div id="viewAllPage" style="display: none;">
         <h2>View All Class Data</h2>
         <div class="button-row">
-            <!-- ... existing buttons ... -->
+            <button onclick="selectClass('Nursery')">Nursery</button>
+            <button onclick="selectClass('LKG')">LKG</button>
+            <button onclick="selectClass('UKG')">UKG</button>
+            <button onclick="selectClass(1)">Class 1</button>
+            <button onclick="selectClass(2)">Class 2</button>
+            <button onclick="selectClass(3)">Class 3</button>
+            <button onclick="selectClass(4)">Class 4</button>
+            <button onclick="selectClass(5)">Class 5</button>
+            <button onclick="selectClass(6)">Class 6</button>
+            <button onclick="selectClass(7)">Class 7</button>
+            <button onclick="selectClass(8)">Class 8</button>
+            <button onclick="selectClass(9)">Class 9</button>
+            <button onclick="selectClass(10)">Class 10</button>
+            <button onclick="selectClass(11)">Class 11</button>
+            <button onclick="selectClass(12)">Class 12</button>
         </div>
     </div>
 
     <script>
-        // ... existing JavaScript functions ...
+        function showAdmissionPage() {
+            document.getElementById('admissionPage').style.display = 'block';
+            document.getElementById('addFeesPage').style.display = 'none';
+            document.getElementById('viewAllPage').style.display = 'none';
+        }
+
+        function showAddFeesPage() {
+            document.getElementById('admissionPage').style.display = 'none';
+            document.getElementById('addFeesPage').style.display = 'block';
+            document.getElementById('viewAllPage').style.display = 'none';
+        }
+
+        function showViewAllPage() {
+            document.getElementById('admissionPage').style.display = 'none';
+            document.getElementById('addFeesPage').style.display = 'none';
+            document.getElementById('viewAllPage').style.display = 'block';
+        }
+
+        function openGoogleImages() {
+            window.open('https://photos.app.goo.gl/8hJ74rU2DkLmRUUA8', '_blank');
+        }
+
+        function selectClass(classNumber) {
+            // Add logic for handling the selected class in the Admission page
+            alert(`Selected class: ${classNumber}`);
+        }
+
+        function depositFees(classNumber) {
+            // Add logic for handling the fees deposit for the selected class
+            alert(`Deposit fees for: ${classNumber}`);
+        }
+
+        function viewAllClassData(classNumber) {
+            // Add logic for handling the view all class data for the selected class
+            alert(`View all data for: ${classNumber}`);
+        }
     </script>
 
 </body>
