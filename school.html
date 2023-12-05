@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Life Children H.S. School, Guna</title>
+    <style>
+        body {
+            background-color: #780e12;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #fff;
+        }
+
+        button {
+            background-color: #e8b34b;
+            color: black;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #d09d3a;
+        }
+
+        #admissionPage, #addFeesPage, #viewAllPage {
+            margin-top: 20px;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .button-row button {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Page -->
+    <h1>New Life Children H.S. School, Guna</h1>
+    <button onclick="showAdmissionPage()">Admission</button>
+    <button onclick="showAddFeesPage()">Add Fees</button>
+    <button onclick="showViewAllPage()">View All</button>
+    <button onclick="openGoogleImages()">NLS FUN FAIR 2023</button>
+
+    <!-- Admission Page -->
+    <div id="admissionPage" style="display: none;">
+        <h2>New Admission</h2>
+        <div class="button-row">
+            <button onclick="selectClass('Nursery')">Nursery</button>
+            <button onclick="selectClass('LKG')">LKG</button>
+            <button onclick="selectClass('UKG')">UKG</button>
+            <button onclick="selectClass(1)">Class 1</button>
+            <button onclick="selectClass(2)">Class 2</button>
+            <button onclick="selectClass(3)">Class 3</button>
+            <button onclick="selectClass(4)">Class 4</button>
+            <button onclick="selectClass(5)">Class 5</button>
+            <button onclick="selectClass(6)">Class 6</button>
+            <button onclick="selectClass(7)">Class 7</button>
+            <button onclick="selectClass(8)">Class 8</button>
+            <button onclick="selectClass(9)">Class 9</button>
+            <button onclick="selectClass(10)">Class 10</button>
+            <button onclick="selectClass(11)">Class 11</button>
+            <button onclick="selectClass(12)">Class 12</button>
+        </div>
+    </div>
+
+    <!-- Add Fees Page -->
+    <div id="addFeesPage" style="display: none;">
+        <h2>Fees Deposit</h2>
+        <div class="button-row">
+            <button onclick="depositFees('Nursery')">Nursery</button>
+            <button onclick="depositFees('LKG')">LKG</button>
+            <button onclick="depositFees('UKG')">UKG</button>
+            <button onclick="depositFees(1)">Class 1</button>
+            <button onclick="depositFees(2)">Class 2</button>
+            <button onclick="depositFees(3)">Class 3</button>
+            <button onclick="depositFees(4)">Class 4</button>
+            <button onclick="depositFees(5)">Class 5</button>
+            <button onclick="depositFees(6)">Class 6</button>
+            <button onclick="depositFees(7)">Class 7</button>
+            <button onclick="depositFees(8)">Class 8</button>
+            <button onclick="depositFees(9)">Class 9</button>
+            <button onclick="depositFees(10)">Class 10</button>
+            <button onclick="depositFees(11)">Class 11</button>
+            <button onclick="depositFees(12)">Class 12</button>
+        </div>
+    </div>
+
+    <!-- View All Page -->
+    <div id="viewAllPage" style="display: none;">
+        <h2>View All Class Data</h2>
+        <div class="button-row">
+            <button onclick="viewAllClassData('Nursery')">Nursery</button>
+            <button onclick="viewAllClassData('LKG')">LKG</button>
+            <button onclick="viewAllClassData('UKG')">UKG</button>
+            <button onclick="viewAllClassData(1)">Class 1</button>
+            <button onclick="viewAllClassData(2)">Class 2</button>
+            <button onclick="viewAllClassData(3)">Class 3</button>
+            <button onclick="viewAllClassData(4)">Class 4</button>
+            <button onclick="viewAllClassData(5)">Class 5</button>
+            <button onclick="viewAllClassData(6)">Class 6</button>
+            <button onclick="viewAllClassData(7)">Class 7</button>
+            <button onclick="viewAllClassData(8)">Class 8</button>
+            <button onclick="viewAllClassData(9)">Class 9</button>
+            <button onclick="viewAllClassData(10)">Class 10</button>
+            <button onclick="viewAllClassData(11)">Class 11</button>
+            <button onclick="viewAllClassData(12)">Class 12</button>
+        </div>
+    </div>
+
+    <script>
+        function showAdmissionPage() {
+            document.getElementById('admissionPage').style.display = 'block';
+            document.getElementById('addFeesPage').style.display = 'none';
+            document.getElementById('viewAllPage').style.display = 'none';
+        }
+
+        function showAddFeesPage() {
+            document.getElementById('admissionPage').style.display = 'none';
+            document.getElementById('addFeesPage').style.display = 'block';
+            document.getElementById('viewAllPage').style.display = 'none';
+        }
+
+        function showViewAllPage() {
+            document.getElementById('admissionPage').style.display = 'none';
+            document.getElementById('addFeesPage').style.display = 'none';
+            document.getElementById('viewAllPage').style.display = 'block';
+        }
+
+        function openGoogleImages() {
+            window.open('https://photos.app.goo.gl/8hJ74rU2DkLmRUUA8', '_blank');
+        }
+
+        function selectClass(classNumber) {
+            // Add logic for handling the selected class in the Admission page
+            alert(`Selected class: ${classNumber}`);
+        }
+
+        function depositFees(classNumber) {
+            // Add logic for handling the fees deposit for the selected class
+            alert(`Deposit fees for: ${classNumber}`);
+        }
+
+        function viewAllClassData(classNumber) {
+            // Add logic for handling the view all class data for the selected class
+            alert(`View all data for: ${classNumber}`);
+        }
+    </script>
+
+</body>
+</html>
